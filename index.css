@@ -28,11 +28,7 @@ h2 {
 }
 
 .link-image {
-<<<<<<< HEAD
-    width: 200px; 
-=======
     width: 400px; 
->>>>>>> 2eead0670a36c16c697b3d21f7186c0b1b729aeb
     height: 20px; 
     border-radius: 25%; 
 }
