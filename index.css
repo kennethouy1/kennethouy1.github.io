@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 40;
     padding: 0;
     background-color: #f4f4f4;
@@ -15,10 +15,22 @@ h2 {
     color: #333;
 }
 
-.container{
-    width: 80%; 
-    margin: 0 auto;
-    max-width: 800px;
+.container {
+    max-width: 50%;  
+    width: 100%; /
+  }
+
+.link-with-image{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.link-image {
+    width: 200px; 
+    height: 20px; 
+    border-radius: 25%; 
 }
 
 p {
