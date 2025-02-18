@@ -27,6 +27,11 @@ h2 {
     
 }
 
+.link-with-image2{
+    align-items: center;
+    gap: 10px;
+}
+
 .link-image {
     border-radius: 25%; 
 }
