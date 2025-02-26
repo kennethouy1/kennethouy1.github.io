@@ -1,41 +1,91 @@
+/* Default Light Mode */
 body {
     font-family: 'Inter', sans-serif;
-    margin: 40;
+    margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: white;
+}
+
+/* Fix Left Buffer Issue */
+.container {
+    max-width: 800px;  /* Adjust width as needed */
+    margin: 0 auto;    /* Center content */
+    padding: 20px;     /* Add some spacing */
+}
+
+/* Restore h1 and h2 Font Sizes */
 h1 {
     font-size: 80px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 h2 {
     font-size: 40px;
     color: #333;
+    margin-bottom: 20px;
 }
 
-.container {
-    max-width: 50%;  
-    width: 100%; /
-  }
-
-.link-with-image{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
+/* Toggle Switch Styles */
+.switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
 }
 
-.link-with-image2{
-    align-items: center;
-    gap: 10px;
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.link-image {
-    border-radius: 25%; 
+/* Slider Styling */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
 }
 
-p {
-    color: #666;
+/* The circle inside the slider */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Dark Mode ON (when checkbox is checked) */
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
 }
