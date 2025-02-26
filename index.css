@@ -82,7 +82,7 @@ h2 {
 }
 
 /* Dark Mode ON (when checkbox is checked) */
- input:checked + .slider {
+input:checked + .slider {
     background-color: #4CAF50;
 }
 
